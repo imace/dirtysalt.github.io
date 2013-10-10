@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Cracking The Coding Interview"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2013-10-10 10:17:58 CST"/>
+<meta name="generated" content="2013-10-10 14:16:27 CST"/>
 <meta name="author" content="dirtysalt"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -105,6 +105,15 @@
 <li><a href="#sec-1-5-4">1.5.4 The Offer and Beyond</a></li>
 <li><a href="#sec-1-5-5">1.5.5 Top Ten Mistakes Candidates Make</a></li>
 <li><a href="#sec-1-5-6">1.5.6 Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-6">1.6 Interview Questions</a>
+<ul>
+<li><a href="#sec-1-6-1">1.6.1 Arrays and Strings</a></li>
+<li><a href="#sec-1-6-2">1.6.2 Linked Lists</a></li>
+<li><a href="#sec-1-6-3">1.6.3 Stacks and Queues</a></li>
+<li><a href="#sec-1-6-4">1.6.4 Trees and Graphs</a></li>
+<li><a href="#sec-1-6-5">1.6.5 Bit Manipulation</a></li>
 </ul>
 </li>
 </ul>
@@ -650,6 +659,165 @@ Here’s why we strongly recommend that you tell your interviewer that you’ve 
 </li>
 </ol>
 
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Interview Questions</h3>
+<div class="outline-text-3" id="text-1-6">
+
+<ul>
+<li>Data Structures
+</li>
+<li>Concepts and Algorithms
+</li>
+<li>Knowledge Based
+</li>
+</ul>
+
+
+
+</div>
+
+<div id="outline-container-1-6-1" class="outline-4">
+<h4 id="sec-1-6-1"><span class="section-number-4">1.6.1</span> Arrays and Strings</h4>
+<div class="outline-text-4" id="text-1-6-1">
+
+<ul>
+<li>Design an algorithm and write code to remove the duplicate characters in a string without using any additional buffer.
+</li>
+<li>Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees Can you do this in place?
+</li>
+<li>Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column is set to 0.
+</li>
+<li>Assume you have a method isSubstring which checks if one word is a substring of another Given two strings, s1 and s2, write code to check if s2 is a rotation of s1 using only one call to isSubstring (i e , “waterbottle” is a rotation of “erbottlewat”).
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-6-2" class="outline-4">
+<h4 id="sec-1-6-2"><span class="section-number-4">1.6.2</span> Linked Lists</h4>
+<div class="outline-text-4" id="text-1-6-2">
+
+<p>Questions:
+</p><ul>
+<li>Write code to remove duplicates from an unsorted linked list.
+</li>
+<li>Implement an algorithm to find the nth to last element of a singly linked list.
+</li>
+<li>Implement an algorithm to delete a node in the middle of a single linked list, given only access to that node.
+</li>
+<li>Given a circular linked list, implement an algorithm which returns node at the begin- ning of the loop.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-6-3" class="outline-4">
+<h4 id="sec-1-6-3"><span class="section-number-4">1.6.3</span> Stacks and Queues</h4>
+<div class="outline-text-4" id="text-1-6-3">
+
+<p>Questions:
+</p><ul>
+<li>How would you design a stack which, in addition to push and pop, also has a function min which returns the minimum element? Push, pop and min should all operate in O(1) time.
+</li>
+<li>Implement a MyQueue class which implements a queue using two stacks.
+</li>
+<li>Write a program to sort a stack in ascending order. You should not make any assump- tions about how the stack is implemented.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-6-4" class="outline-4">
+<h4 id="sec-1-6-4"><span class="section-number-4">1.6.4</span> Trees and Graphs</h4>
+<div class="outline-text-4" id="text-1-6-4">
+
+<ul>
+<li>Trees
+<ul>
+<li>Not all binary trees are binary search trees
+</li>
+<li>In-Order: Traverse left node, current node, then right
+</li>
+<li>Pre-Order: Traverse current node, then left node, then right node
+</li>
+<li>Post-Order: Traverse left node, then right node, then current node
+</li>
+<li><b>AVL Tree, RB Tree.</b>
+</li>
+</ul>
+
+</li>
+<li>Graphs
+<ul>
+<li>Depth First Search
+</li>
+<li>Breadth First Search
+</li>
+<li><b>Dijkstra,Floyd,Prim,Kruskal.</b>
+</li>
+</ul>
+
+</li>
+</ul>
+
+
+<p>
+Questions:
+</p><ul>
+<li>Given a sorted (increasing order) array, write an algorithm to create a binary tree with minimal height.
+</li>
+<li>Design an algorithm and write code to find the first common ancestor of two nodes in a binary tree. Avoid storing additional nodes in a data structure.
+</li>
+<li>You have two very large binary trees: T1, with millions of nodes, and T2, with hun- dreds of nodes. Create an algorithm to decide if T2 is a subtree of T1.
+</li>
+<li>You are given a binary tree in which each node contains a value Design an algorithm to print all paths which sum up to that value.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-6-5" class="outline-4">
+<h4 id="sec-1-6-5"><span class="section-number-4">1.6.5</span> Bit Manipulation</h4>
+<div class="outline-text-4" id="text-1-6-5">
+
+<p><img src="./images/bitop.png"  alt="./images/bitop.png" />
+</p>
+<p>
+Questions:
+</p><ul>
+<li>You are given two 32-bit numbers, N and M, and two bit positions, i and j Write a method to set all bits between i and j in N equal to M. Input: N = 10000000000, M = 10101, i = 2, j = 6. Output: N = 10001010100
+</li>
+<li>Given a (decimal - e g 3 72) number that is passed in as a string, print the binary rep- resentation If the number can not be represented accurately in binary, print “ERROR”
+</li>
+<li>Given an integer, print the next smallest and next largest number that have the same number of 1 bits in their binary representation.
+</li>
+<li>Explain what the following code does: ((n &amp; (n-1)) == 0).
+</li>
+<li>Write a function to determine the number of bits required to convert integer A to integer B.
+</li>
+<li>Write a program to swap odd and even bits in an integer with as few instructions as possible (e g , bit 0 and bit 1 are swapped, bit 2 and bit 3 are swapped, etc).
+</li>
+</ul>
+
+
 </div>
 </div>
 </div>
@@ -657,7 +825,7 @@ Here’s why we strongly recommend that you tell your interviewer that you’ve 
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2013-10-10 10:17:58 CST</p>
+<p class="date">Date: 2013-10-10 14:16:27 CST</p>
 <p class="creator">Org version 7.8.11 with Emacs version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
 
