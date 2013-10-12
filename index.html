@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="marathon@dirlt.com"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2013-10-12 15:10:17 CST"/>
+<meta name="generated" content="2013-10-12 15:28:46 CST"/>
 <meta name="author" content="dirtysalt"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -117,7 +117,9 @@
 </li>
 <li><a href="apue.html">APUE</a> Unix环境高级编程(Advanced Programming Unix Environment),W. Richard Stevens的神作。笔记里面没有包含书最后的几个部分，比如终端，打印机等，因为我觉得可能大家都不太需要这个东西了。我还尝试将一些跨章节的概念整合到一起，这样比较容易从总体把握Unix编程环境。
 </li>
-<li><a href="simd.html">SIMD</a> SIMD(Single Instruction Muitple Data)单指令多数据。这个笔记其实是Intel Reference Manual中关于SIMD指令的总结。里面包含了一些理解SIMD指令需要的知识，以及对SIMD指令进行了分类。遗憾的是里面没有什么过多的例子，毕竟这个是结合场景来使用的。
+<li>OS
+<ul>
+<li><a href="linux.html">Linux</a> 主要是介绍Linux下面一些工具使用以及和内核相关的知识。（将原来<a href="./APUE.html">APUE</a> 和 <a href="./UNP.html">UNP</a> 中的一部分内容放在这里面来了，这样可以保持这两篇内容比较稳定）
 </li>
 <li><a href="pic.html">PIC</a> 分析了一下PIC位置无关代码内部的原理以及和动态库之间的关系。通过阅读&lt;深入理解计算机系统&gt;并且结合实际的例子总结出来的。
 </li>
@@ -125,63 +127,31 @@
 </li>
 <li><a href="encoding.html">Encoding</a> 介绍了GB2312/GBK/GB18030/Unicode/UTF16/UTF32/UTF8这几种字符编码格式。还是觉得UTF8在设计以及实现上都相对更加合理。
 </li>
-<li><a href="tcmalloc.html">TCMalloc</a> Google的开源线程缓存内存分配器，解决多线程下面内存分配效率问题。
-</li>
-<li><a href="snappy.html">Snappy</a> Google的开源压缩解压库。在满足一定压缩比率的条件下着重提升压缩和解压速度。
-</li>
-<li><a href="lzf.html">lzf</a> Redis使用的开源压缩解压库。轻量(两个文件), 可以很容易地独立纳入项目。
-</li>
-<li><a href="./lzma.html">lzma</a> Lempel-Ziv-Markov chain algorithm ，压缩速度相对较慢但是压缩比超高。
-</li>
-<li><a href="build-system.html">BuildSystem</a> 在实现Baidu in-house的构建工具Comake2之前，做过构建系统的调研总结出来的。在语法表达上面(非常重要)借鉴了SCons,考虑了其他构建系统提供的功能。
-</li>
-<li><a href="maven.html">Maven</a> 主要针对Java开发的基于工程对象模型(POM, Project Object Model)构建系统，主要记录了一些使用方面的问题和解决办法。
-</li>
-<li><a href="oprofile.html">OProfile</a> OProfile(系统级profiler)的原理和应用。不过说实话没有分析过源代码(或者是自己技术背景不行)终究觉得对这个东西理解不够深入，而且自己也仅仅是使用OProfile功能的子集。
-</li>
-<li><a href="swig.html">SWIG</a> C/C++多语言扩展接口生成器，使用起来非常方便(至于生成的代码没有看过效率如何).个人觉得比较适合quick &amp; dirty的方案。
-</li>
-<li><a href="git.html">Git</a> 分布式版本控制系统。很多项目都在使用Git进行版本管理包括Linux Kernel, Ruby on Rails, WINE, X.org等。
-</li>
-<li><a href="ubuntu.html">Ubuntu</a> 如何更好地使用Ubuntu，<a href="note/struggle-with-ubuntu.html">之前有过痛苦的经历</a> 。主要记录自己使用出现的问题。
-</li>
-<li><a href="emacs.html">Emacs</a> 如何更好地使用Emacs。自己依然只是使用一些简单功能，身边有很多牛人用Emacs那是相当的出神入化。
-</li>
-<li><a href="linux.html">Linux</a> 主要是介绍Linux下面一些工具使用以及和内核相关的知识。（将原来<a href="./APUE.html">APUE</a> 和 <a href="./UNP.html">UNP</a> 中的一部分内容放在这里面来了，这样可以保持这两篇内容比较稳定）
-</li>
 <li><a href="cpu.html">CPU</a> CPU相关
+<ul>
+<li><a href="simd.html">SIMD</a> SIMD(Single Instruction Muitple Data)单指令多数据。这个笔记其实是Intel Reference Manual中关于SIMD指令的总结。里面包含了一些理解SIMD指令需要的知识，以及对SIMD指令进行了分类。遗憾的是里面没有什么过多的例子，毕竟这个是结合场景来使用的。
+</li>
+</ul>
+
+</li>
+<li><a href="concurrency.html">Concurrency</a> 并发
 </li>
 <li><a href="coroutine.html">Coroutine</a> 协程，轻量级线程。
 </li>
 <li><a href="lock.html">Lock</a> 锁的原理与不同实现
 </li>
 <li><a href="memory.html">Memory</a> 内存相关
+<ul>
+<li><a href="tcmalloc.html">TCMalloc</a> Google的开源线程缓存内存分配器，解决多线程下面内存分配效率问题。
+</li>
+</ul>
+
 </li>
 <li><a href="continuation.html">Continuation</a> 延续，异步编程一种实现。
 </li>
 <li><a href="sysperf.html">System-Peformance</a> 系统性能相关
-</li>
-<li><a href="concurrency.html">Concurrency</a> 并发
-</li>
-<li><a href="fvwm.html">FVWM</a> F* Virtual Windows Manager.Linux下面高度可定制化的窗口管理器。
-</li>
-<li><a href="mac.html">Macintosh</a> 如何更好地使用Mac。以前使用Windows，后来转向Ubuntu，再后来买了个MBA. 熟悉它又需要一段时间了。
-</li>
-<li><a href="license.html">License</a> 一些常见的开源协议。不知道自己以后是否可以用得上：）
-</li>
-<li><a href="eclipse.html">Eclipse</a> 虽然我喜欢Emacs，但是似乎java方面开发似乎还是离不开它。
-</li>
-<li><a href="intellij.html">Intellij</a> Eclipse太慢了，看看Intellij怎么样。
-</li>
-<li><a href="lcov.html">lcov</a> the LTP(Linux Testing Project) GCOV extension.用来完成C/C++测试覆盖。
-</li>
-<li><a href="web-misc.html">Web Misc</a> Web开发遇到的一些问题。因为自己对于Web开发不太了解，所以内容上的话可能显得有点弱智。
-</li>
-<li><a href="folly.html">Folly</a> Folly is an open-source C++ library developed and used at Facebook.
-</li>
-<li><a href="flex-bison.html">Flex/Bison</a> 可以用来书写词法和语法分析器，Bison支持的语法是LALR（1）。
-</li>
-<li><a href="valgrind.html">Valgrind</a> CPU和内核模拟器，通过暴露接口可以构建动态分析工具，比如内存调试，检测内存泄露，多线程分析和性能分析等。
+<ul>
+<li><a href="oprofile.html">OProfile</a> OProfile(系统级profiler)的原理和应用。不过说实话没有分析过源代码(或者是自己技术背景不行)终究觉得对这个东西理解不够深入，而且自己也仅仅是使用OProfile功能的子集。
 </li>
 <li><a href="systemtap.html">SystemTap</a> 通过将观察语句编译成为内核驱动，和linux内核提供的接口匹配，来深度地观察linux操作系统。
 </li>
@@ -189,11 +159,73 @@
 </li>
 <li><a href="perf.html">Perf</a> Linux系统自带的性能分析工具，支持硬件以及软件事件计数器，支持profile kernel以及user code.
 </li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li>Compression
+<ul>
+<li><a href="snappy.html">Snappy</a> Google的开源压缩解压库。在满足一定压缩比率的条件下着重提升压缩和解压速度。
+</li>
+<li><a href="lzf.html">Lzf</a> Redis使用的开源压缩解压库。轻量(两个文件), 可以很容易地独立纳入项目。
+</li>
+<li><a href="lzma.html">Lzma</a> Lempel-Ziv-Markov chain algorithm ，压缩速度相对较慢但是压缩比超高。
+</li>
+</ul>
+
+</li>
+<li>Tool
+<ul>
+<li><a href="swig.html">SWIG</a> C/C++多语言扩展接口生成器，使用起来非常方便(至于生成的代码没有看过效率如何).个人觉得比较适合quick &amp; dirty的方案。
+</li>
+<li><a href="git.html">Git</a> 分布式版本控制系统。很多项目都在使用Git进行版本管理包括Linux Kernel, Ruby on Rails, WINE, X.org等。
+</li>
+<li><a href="folly.html">Folly</a> Folly is an open-source C++ library developed and used at Facebook.
+</li>
+<li><a href="flex-bison.html">Flex/Bison</a> 可以用来书写词法和语法分析器，Bison支持的语法是LALR（1）。
+</li>
+<li><a href="valgrind.html">Valgrind</a> CPU和内核模拟器，通过暴露接口可以构建动态分析工具，比如内存调试，检测内存泄露，多线程分析和性能分析等。
+</li>
 <li><a href="protobuf.html">Protocol-Buffers</a> Google的数据交换格式，能够高效地序列化和反序列化对象，同时考虑向后兼容问题。
 </li>
 <li><a href="thrift.html">Thrift</a> Facebook的数据交换格式，能够高效地序列化和反序列化对象，同时考虑向后兼容问题。
 </li>
 <li><a href="gdb.html">GDB</a> GNU Debugger, mainly on C/C++. 不过现在比较习惯打印日志方式来调试。
+</li>
+<li><a href="license.html">License</a> 一些常见的开源协议。不知道自己以后是否可以用得上：）
+</li>
+<li><a href="lcov.html">lcov</a> the LTP(Linux Testing Project) GCOV extension.用来完成C/C++测试覆盖。
+</li>
+<li><a href="web-misc.html">Web Misc</a> Web开发遇到的一些问题。因为自己对于Web开发不太了解，所以内容上的话可能显得有点弱智。
+</li>
+<li><a href="build-system.html">BuildSystem</a> 在实现Baidu in-house的构建工具Comake2之前，做过构建系统的调研总结出来的。在语法表达上面(非常重要)借鉴了SCons,考虑了其他构建系统提供的功能。
+<ul>
+<li><a href="maven.html">Maven</a> 主要针对Java开发的基于工程对象模型(POM, Project Object Model)构建系统，主要记录了一些使用方面的问题和解决办法。
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li>Desktop
+<ul>
+<li><a href="ubuntu.html">Ubuntu</a> 如何更好地使用Ubuntu，<a href="note/struggle-with-ubuntu.html">之前有过痛苦的经历</a> 。主要记录自己使用出现的问题。
+</li>
+<li><a href="fvwm.html">FVWM</a> F* Virtual Windows Manager.Linux下面高度可定制化的窗口管理器。
+</li>
+<li><a href="mac.html">Macintosh</a> 如何更好地使用Mac。以前使用Windows，后来转向Ubuntu，再后来买了个MBA. 熟悉它又需要一段时间了。
+</li>
+<li><a href="emacs.html">Emacs</a> 如何更好地使用Emacs。自己依然只是使用一些简单功能，身边有很多牛人用Emacs那是相当的出神入化。
+</li>
+<li><a href="eclipse.html">Eclipse</a> 虽然我喜欢Emacs，但是似乎java方面开发似乎还是离不开它。
+</li>
+<li><a href="intellij.html">Intellij</a> Eclipse太慢了，看看Intellij怎么样。
+</li>
+</ul>
+
 </li>
 </ul>
 
@@ -250,13 +282,13 @@
 </li>
 <li><a href="./libev.html">libev</a> 开源的事件触发器。被认为是更高效的libevent. <a href="https://github.com/dirtysalt/sperm/tree/master/code/cc/itachi">itachi</a> 这个项目开始想自己编写事件触发器，但是发现工作比较琐碎枯燥，所以底层还是选择使用libev.
 </li>
-<li><a href="hpserver.html">hpserver</a> 开源的网络编程框架。可以当做一个入门级的网络编程框架阅读。这个是我最开始阅读的网络编程框架(1st).
+<li><a href="hpserver.html">HPServer</a> 开源的网络编程框架。可以当做一个入门级的网络编程框架阅读。这个是我最开始阅读的网络编程框架(1st).
 </li>
-<li><a href="./nmstl.html">nmstl</a> 开源的网络编程框架。一个很早期的作品，代码十分简洁。主要是内部实现了SEDA的思想。这个是我第二个阅读的网络编程框架(2nd).
+<li><a href="nmstl.html">NMSTL</a> 开源的网络编程框架。一个很早期的作品，代码十分简洁。主要是内部实现了SEDA的思想。这个是我第二个阅读的网络编程框架(2nd).
 </li>
-<li><a href="muduo.html">muduo</a> 开源的网络编程框架。作者理想中的网络编程框架实现，里面有很多mina/netty的影子。这个是我三个阅读的网络编程框架(3rd).
+<li><a href="muduo.html">Muduo</a> 开源的网络编程框架。作者理想中的网络编程框架实现，里面有很多mina/netty的影子。这个是我三个阅读的网络编程框架(3rd).
 </li>
-<li><a href="kylin.html">kylin</a> Baidu in-house的异步编程框架，是<a href="http://weibo.com/linshiding">linsd(百度首席架构师林仕鼎)</a>的神作，通过阅读这个框架的代码让我理解了异步编程模型。这个是我第四个阅读的网络编程框架(4th). 
+<li><a href="kylin.html">Kylin</a> Baidu in-house的异步编程框架，是<a href="http://weibo.com/linshiding">linsd(百度首席架构师林仕鼎)</a>的神作，通过阅读这个框架的代码让我理解了异步编程模型。这个是我第四个阅读的网络编程框架(4th). 
 </li>
 <li><a href="zeromq.html">ZeroMQ</a> 开源的消息传输系统。颠覆我们思考和编写网络通信程序的方式。TODO(dirlt):只是阅读了文档和API，可以考虑阅读一下代码.
 </li>
@@ -579,7 +611,7 @@ Especially thanks to <a href="http://xuchaoqian.com">xuchaoqian</a> for encourag
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2013-10-12 15:10:17 CST</p>
+<p class="date">Date: 2013-10-12 15:28:46 CST</p>
 <p class="creator">Org version 7.8.11 with Emacs version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
 
